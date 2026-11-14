@@ -1,19 +1,24 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { CommunityContent } from "@/content/site-content";
 
-const photos = Array.from({ length: 10 }, (_, index) => `/assets/community-${String(index + 1).padStart(2, "0")}.webp`);
+const photos = Array.from({ length: 10 }, (_, index) => `/images/community-${String(index + 1).padStart(2, "0")}.webp`);
 
-export function Community() {
+interface CommunityProps {
+  content: CommunityContent;
+}
+
+export function Community({ content }: CommunityProps) {
   return (
     <section id="community" className="section-shell scroll-mt-8 bg-background">
       <div className="page-container grid items-center gap-6 lg:grid-cols-2 lg:gap-[60px]">
         <div>
-          <p className="eyebrow">The people</p>
-          <h2 className="section-title mt-2">Meet international students &amp; teachers</h2>
+          <p className="eyebrow">{content.eyebrow}</p>
+          <h2 className="section-title mt-2">{content.title}</h2>
           <p className="mt-6 text-base leading-[26px] text-copy-secondary lg:text-lg lg:leading-7">
-            Morbi sit egestas dignissim pharetra, sed amet. Tempus justo senectus risus ac vel, velit, nunc. Eget commodo eget in aliquam facilisi facilisi nec magna hendrerit. Placerat ipsum sit tellus urna, faucibus aenean lorem faucibus integer.
+            {content.description}
           </p>
-          <Link className="button-secondary mt-8 w-full sm:w-auto" href="#contact">Explore teachers and students</Link>
+          <Link className="button-secondary mt-8 w-full sm:w-auto" href={content.actionHref}>{content.action}</Link>
         </div>
         <div className="relative mx-auto h-[310px] w-full max-w-[540px] lg:h-[522px]">
           <div className="absolute left-1/2 top-1/2 size-[330px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary-light lg:size-[500px]" />
