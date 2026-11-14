@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const learners = ["learner-1.png", "learner-2.png", "learner-3.png"] as const;
+const learners = ["learner-1.webp", "learner-2.webp", "learner-3.webp"] as const;
 
 function LearnerStack({ large = false }: { large?: boolean }) {
   const size = large ? 40 : 32;
-  const images = large ? [...learners, "learner-4.png"] : learners;
+  const images = large ? [...learners, "learner-4.webp"] : learners;
   return (
     <div className="flex" aria-hidden="true">
       {images.map((image) => (
@@ -51,7 +51,7 @@ export function Hero() {
           <div className="absolute inset-y-0 left-1/2 w-[calc(100%-16px)] max-w-[500px] -translate-x-1/2 overflow-hidden rounded-2xl lg:w-full lg:rounded-3xl">
             <Image
               className="object-cover"
-              src="/assets/hero-student.png"
+              src="/assets/hero-student.webp"
               alt="Student smiling while learning on a laptop"
               fill
               priority

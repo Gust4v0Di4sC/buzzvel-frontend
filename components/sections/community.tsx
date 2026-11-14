@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const photos = Array.from({ length: 10 }, (_, index) => `/assets/community-${String(index + 1).padStart(2, "0")}.png`);
+const photos = Array.from({ length: 10 }, (_, index) => `/assets/community-${String(index + 1).padStart(2, "0")}.webp`);
 
 export function Community() {
   return (

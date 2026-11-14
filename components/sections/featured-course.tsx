@@ -9,7 +9,7 @@ export function FeaturedCourse() {
           <div className="relative aspect-[538/408] overflow-hidden rounded-lg">
             <Image
               className="object-cover"
-              src="/assets/featured-course.png"
+              src="/assets/featured-course.webp"
               alt="Product design course workspace with sketches, stationery and a laptop"
               fill
               sizes="(max-width: 1023px) calc(100vw - 40px), 538px"

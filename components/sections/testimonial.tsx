@@ -16,7 +16,7 @@ export function Testimonial() {
             “The lessons are short enough to fit into my week, but detailed enough that I actually leave with something I can use.”
           </blockquote>
           <figcaption className="mt-8 flex items-center gap-4">
-            <Image className="rounded-full" src="/assets/alex-morgan.png" alt="Alex Morgan" width={48} height={48} />
+            <Image className="rounded-full" src="/assets/alex-morgan.webp" alt="Alex Morgan" width={48} height={48} />
             <span><strong className="block">Alex Morgan</strong><span className="text-sm text-copy-secondary">Product Manager</span></span>
           </figcaption>
         </figure>
