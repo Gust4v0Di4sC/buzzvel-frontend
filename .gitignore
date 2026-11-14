@@ -16,6 +16,7 @@
 
 # local agent tooling
 /.agents/
+/AGENTS.md
 /skills-lock.json
 
 # next.js
