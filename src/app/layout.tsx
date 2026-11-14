@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
+import { siteMetadata } from "@/content/metadata";
 import "./globals.css";
 
 const inter = Inter({ variable: "--font-inter", subsets: ["latin"], display: "swap" });
@@ -10,15 +11,18 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Luma — Practical learning for curious people",
-  description: "Build practical skills with focused courses taught by working professionals.",
+  title: siteMetadata.title,
+  description: siteMetadata.description,
+  appleWebApp: {
+    title: "Luma",
+  },
 };
 
 export const viewport: Viewport = { themeColor: "#f9f8f3" };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${inter.variable} ${jakarta.variable}`}>
+    <html lang={siteMetadata.locale} className={`${inter.variable} ${jakarta.variable}`}>
       <body>{children}</body>
     </html>
   );
