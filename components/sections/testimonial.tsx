@@ -9,7 +9,7 @@ const metrics = [
 export function Testimonial() {
   return (
     <section className="section-shell bg-white">
-      <div className="page-container grid gap-14 lg:grid-cols-[1.3fr_1fr] lg:items-center lg:gap-24">
+      <div className="page-container grid gap-12 lg:min-h-[325px] lg:grid-cols-[1.3fr_1fr] lg:items-center lg:gap-24">
         <figure>
           <Image src="/assets/quote.svg" alt="" aria-hidden="true" width={24} height={22} />
           <blockquote className="mt-4 max-w-[650px] font-display text-2xl font-bold leading-8 lg:text-[32px] lg:leading-10">

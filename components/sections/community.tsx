@@ -6,7 +6,7 @@ const photos = Array.from({ length: 10 }, (_, index) => `/assets/community-${Str
 export function Community() {
   return (
     <section id="community" className="section-shell scroll-mt-8 bg-background">
-      <div className="page-container grid items-center gap-12 lg:grid-cols-2 lg:gap-[60px]">
+      <div className="page-container grid items-center gap-6 lg:grid-cols-2 lg:gap-[60px]">
         <div>
           <p className="eyebrow">The people</p>
           <h2 className="section-title mt-2">Meet international students &amp; teachers</h2>

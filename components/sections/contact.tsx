@@ -16,16 +16,16 @@ export function Contact() {
           <p className="mt-4 max-w-[520px] text-base leading-[26px] text-copy-secondary lg:text-lg lg:leading-7">
             Have a question? We’re here to help. Whether you’re looking for the right course, learning with your team or interested in teaching with Luma, we’d love to hear from you.
           </p>
-          <dl className="mt-8 space-y-4">
+          <ul className="mt-8 space-y-4">
             {contactDetails.map((detail) => (
-              <div key={detail.title} className="flex items-center gap-4 rounded-lg bg-background p-4">
+              <li key={detail.title} className="flex items-center gap-4 rounded-lg bg-background p-4">
                 <div className="flex size-10 shrink-0 items-center justify-center rounded-lg bg-primary-light">
                   <Image src={detail.icon} alt="" aria-hidden="true" width={22} height={22} />
                 </div>
-                <div><dt className="text-sm font-bold leading-6">{detail.title}</dt><dd className="text-sm leading-6 text-copy-secondary">{detail.text}</dd></div>
-              </div>
+                <div><p className="text-sm font-bold leading-6">{detail.title}</p><p className="text-sm leading-6 text-copy-secondary">{detail.text}</p></div>
+              </li>
             ))}
-          </dl>
+          </ul>
         </div>
         <ContactForm />
       </div>

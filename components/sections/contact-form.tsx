@@ -31,7 +31,7 @@ export function ContactForm() {
         </label>
       </div>
       <button className="button-primary mt-6 w-full" type="submit">Send message</button>
-      <p className="mt-3 min-h-6 text-sm font-medium text-primary" aria-live="polite">{sent ? "Thanks! Your message has been received." : ""}</p>
+      <p className={sent ? "mt-3 text-sm font-medium text-primary" : "sr-only"} aria-live="polite">{sent ? "Thanks! Your message has been received." : ""}</p>
     </form>
   );
 }

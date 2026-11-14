@@ -63,7 +63,7 @@ export function Hero() {
             <span className="text-sm">expert-led courses</span>
           </div>
           <div className="absolute bottom-[35px] right-0 flex items-center gap-2 rounded-xl bg-white px-4 py-3 shadow-[var(--shadow-float)] lg:-right-14">
-            <div className="flex gap-0.5" aria-label="5 out of 5 stars">
+            <div className="flex gap-0.5" aria-hidden="true">
               {Array.from({ length: 5 }, (_, index) => (
                 <Image key={index} src="/assets/star.svg" alt="" aria-hidden="true" width={14} height={14} />
               ))}
