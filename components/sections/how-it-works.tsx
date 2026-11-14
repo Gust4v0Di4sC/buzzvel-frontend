@@ -7,7 +7,7 @@ const steps = [
 export function HowItWorks() {
   return (
     <section id="how-it-works" className="section-shell scroll-mt-8 bg-background">
-      <div className="page-container">
+      <div className="page-container min-h-[881px] lg:min-h-[427px]">
         <div className="text-center">
           <p className="eyebrow">How Luma works</p>
           <h2 className="section-title mt-4">Less browsing. More learning.</h2>

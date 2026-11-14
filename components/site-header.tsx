@@ -22,7 +22,7 @@ export function SiteHeader() {
       >
         Skip to content
       </a>
-      <div className="page-container flex h-[68px] items-center justify-between lg:h-[70px]">
+      <div className="page-container flex h-[68px] items-center justify-between lg:h-[69px]">
         <Link href="#main-content" aria-label="Luma home">
           <Image src="/assets/logo-dark.svg" alt="" width={54} height={17} priority />
         </Link>

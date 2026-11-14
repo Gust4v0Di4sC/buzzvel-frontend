@@ -16,7 +16,7 @@ export function FinalCta() {
       {decorations.map((item) => (
         <Image key={item.src} className={`absolute hidden opacity-60 lg:block ${item.className}`} src={item.src} alt="" width={60} height={60} />
       ))}
-      <div className="page-container relative flex max-w-[720px] flex-col items-center text-center">
+      <div className="relative mx-auto flex w-full max-w-[720px] flex-col items-center px-5 text-center md:px-8">
         <LearnerStack large />
         <h2 className="mt-8 font-display text-4xl font-extrabold leading-10 tracking-[-0.9px] lg:text-[56px] lg:leading-[64px] lg:tracking-[-1.4px]">What will you learn next?</h2>
         <p className="mt-4 text-base leading-[26px] text-copy-secondary lg:text-lg lg:leading-7">Start with one course. Build from there.</p>
