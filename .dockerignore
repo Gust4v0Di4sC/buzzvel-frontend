@@ -1,0 +1,11 @@
+.git
+.gitignore
+.next
+.artifacts
+.agents
+node_modules
+coverage
+npm-debug.log*
+*.tsbuildinfo
+.env*
+!.env.example
