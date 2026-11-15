@@ -43,6 +43,13 @@ npm run build
 
 Both commands pass in the submitted version. The production build prerenders the landing page as static content.
 
+## CI/CD
+
+GitHub Actions runs `npm ci`, ESLint, and the production build for every pull
+request and every push to `main`. Vercel is connected to the GitHub repository:
+pull requests receive preview deployments and a successful merge to `main`
+publishes the production deployment.
+
 ## Implementation decisions
 
 - Design tokens for colors, typography, spacing, radii, and shadows live in `src/app/globals.css` and are exposed to Tailwind where appropriate.
